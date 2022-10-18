@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samidha Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+    <style>
+        /*CSS RESET*/
+        body {
+            font-family: 'Baloo 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gymboth.jpg');
+            background-repeat: no-repeat;
+            background-size: 1500px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 0px;
+            font-size: 20px;
+            /*border: 10px solid orange;*/
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 10px auto;
+            margin-right: auto;
+            /*border: 10px solid green;*/
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 0px;
+            display: inline-block;
+            /*border: 10px solid green;*/
+        }
+
+        .left img {
+            margin-left: 10px;
+            width: 55px;
+        }
+
+        .left text {
+            color: white;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            margin-top: 200px 0px;
+            padding: 25px 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            font-family:'Baloo 2', cursive ;
+            margin: 10px 5px;
+            background-color: black;
+            color: white;
+            padding: 2px 2px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            border-width: 10px;
+            border-color: royalblue;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(5, 202, 87);
+        }
+
+        .container {
+
+            border: 2px solid white;
+            margin: 50px 40px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            font-family:'Baloo 2', cursive ;
+            text-align: center;
+            display: block;
+            width: 350px;
+            padding: 1px;
+            border: 2px solid black;
+            margin:10px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block ;
+            width : 23%;
+            margin: auto;
+        }
+       .box{
+        display:block;
+        margin: 50px 80px;
+        border: 10px solid green;
+       }
+      #fun{
+        display: block;
+       /* float: top;*/
+        color: rgb(238, 235, 17);
+        width: 60%;
+        margin-left: 900px;
+        margin-top: -300px;
+        border-radius: 50px;
+        border-style: dashed;
+        border-width: 10px;
+        border-color: rgb(240, 28, 77);
+       }
+       #fun h2{
+        
+       font-size: 25px;
+       }  
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="img/jim.png" alt="">
+            <div style="color:white ;">Sam Fitness</div>
+        </div>
+
+        <!--mid box for navigation bar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> HOME</a></li>
+                <li><a href="#"> ABOUT US</a></li>
+                <li><a href="#"> FITNESS CALCULATOR</a></li>
+                <li><a href="#"> CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <!--right box for buttons-->
+        <div class="right">
+            <button class=" btn "> CALL US NOW</button><button class="btn">EMAIL US</button>
+        </div>
+    </header>
+    <div class="container" style="color: rgb(238, 235, 17);">
+        <h1>JOIN THE BEST GYM OF MUMBAI NOW!!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Phone No. ">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Email id">
+            </div>
+            <button class="btn">Submit</button>
+            <div id= "fun" class="container">
+            
+                <h2> ENTER COUPON CODE TO AVAIL THE OFFER </h2>
+                <input type="number" name="CODE" placeholder="CODE">
+                
+                <button class="btn">OK</button>
+               
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
